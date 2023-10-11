@@ -49,7 +49,7 @@ for name, model in models.items():
     pipeline.fit(X_train, y_train)
     predictions = pipeline.predict(X_test)
     mae_scores[name] = mean_absolute_error(y_test, predictions)
-print(mae_scores) // print mean absolute error for descion tree, random forrest and extra trees
+print(mae_scores) # print mean absolute error for descion tree, random forrest and extra trees
 
 def load_and_preprocess_data(filepath):
     # Load the dataset
